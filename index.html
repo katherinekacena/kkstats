@@ -4,11 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Katherine Kacena, PhD</title>
+  <link rel="icon" type="image/png" href="favicon.png">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <style>
     :root {
       --primary: #00796B;
-      --accent: #FF6F61;
+      --accent: #FF69B4;
       --neutral: #F5F5F5;
       --text: #333333;
     }
@@ -20,25 +21,44 @@
       color: var(--text);
     }
 
+    nav {
+      background: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      margin-left: 2rem;
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: 600;
+    }
+
     header {
       background: var(--primary);
       color: white;
       text-align: center;
-      padding: 3rem 1rem;
+      padding: 3rem 1rem 2rem;
     }
 
     header h1 {
       font-family: 'Playfair Display', serif;
-      font-size: 2.5rem;
+      font-size: 3rem;
       margin-bottom: 0.5rem;
     }
 
     header p {
-      font-size: 1.2rem;
+      font-size: 1.25rem;
     }
 
     section {
-      max-width: 800px;
+      max-width: 900px;
       margin: 2rem auto;
       padding: 1rem;
       background: white;
@@ -77,12 +97,22 @@
   </style>
 </head>
 <body>
+  <nav>
+    <div><strong>Katherine Kacena, PhD</strong></div>
+    <div>
+      <a href="#about">About</a>
+      <a href="#highlights">Highlights</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
   <header>
     <h1>Katherine Kacena, PhD</h1>
-    <p>Clinical Data Scientist & Biostatistician with Global Impact</p>
+    <p>Statistical Consultant</p>
   </header>
 
-  <section>
+  <section id="about">
     <h2>About</h2>
     <p>
       Dr. Katherine Kacena is a leading biostatistician and clinical data science consultant with over 20 years of experience across academia, biotechnology, and global drug development. She earned her PhD in International Health from Johns Hopkins University, completed a postdoctoral fellowship in Adult Infectious Diseases at Johns Hopkins School of Medicine, and later held a Visiting Fellowship in Causal Inference and Multiple Imputation at Harvard University.
@@ -92,7 +122,7 @@
     </p>
   </section>
 
-  <section>
+  <section id="highlights">
     <h2>Professional Highlights</h2>
     <ul>
       <li>Directed biostatistics and programming teams for oncology and radiopharmaceutical clinical trials</li>
@@ -101,7 +131,7 @@
     </ul>
   </section>
 
-  <section>
+  <section id="skills">
     <h2>Skills & Expertise</h2>
     <div class="skills">
       <div class="skill">Clinical Trial Design</div>
@@ -119,11 +149,11 @@
     </div>
   </section>
 
-  <section>
+  <section id="contact">
     <h2>Contact</h2>
     <div class="contact">
       📧 <a href="mailto:kk@kkstats.com">kk@kkstats.com</a><br/>
-      💼 <a href="https://www.linkedin.com/in/katherinekacena/" target="_blank">LinkedIn</a> | 
+      💼 <a href="https://www.linkedin.com/in/katherinekacena/" target="_blank">LinkedIn</a> |
       💻 <a href="https://github.com/katherinekacena" target="_blank">GitHub</a>
     </div>
   </section>
